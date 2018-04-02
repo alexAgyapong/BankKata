@@ -11,14 +11,15 @@ namespace BankKata.Tests
         private Account account;
         private ITransactionRepository transactionRepository;
         private IStatementPrinter statementPrinter;
-        private IClock clock;
+        private Mock<IClock> clock;
 
         [SetUp]
         public void SetUp()
         {
             outputWriter = new Mock<IOutputWriter>();
-            transactionRepository = new TransactionRepository(clock);
-            statementPrinter = new StatementPrinter();
+            clock = new Mock<IClock>();
+            transactionRepository = new TransactionRepository(clock.Object);
+            statementPrinter = new StatementPrinter(outputWriter.Object);
             account = new Account(transactionRepository, statementPrinter);
         }
 
