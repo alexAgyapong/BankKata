@@ -1,24 +1,30 @@
 ﻿namespace BankKata.Domain
 {
-    public class Account
+    public class Account : IAccount
     {
-        public Account()
+        private readonly ITransactionRepository transactionRepository;
+        private readonly IStatementPrinter statementPrinter;
+
+        public Account(ITransactionRepository transactionRepository,
+                       IStatementPrinter statementPrinter)
         {
+            this.transactionRepository = transactionRepository;
+            this.statementPrinter = statementPrinter;
         }
 
-        public void Deposit(int p0)
+        public void Deposit(int amount)
         {
-            throw new System.NotImplementedException();
+            transactionRepository.AddDeposit(amount);
         }
 
-        public void Withdrawal(int i)
+        public void Withdrawal(int amount)
         {
-            throw new System.NotImplementedException();
+            transactionRepository.AddWithdrawal(amount);
         }
 
         public void PrintStatement()
         {
-            throw new System.NotImplementedException();
+            statementPrinter.Print(transactionRepository.GetAllTransactions());
         }
     }
 }

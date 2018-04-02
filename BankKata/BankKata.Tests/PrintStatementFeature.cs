@@ -8,17 +8,21 @@ namespace BankKata.Tests
     public class PrintStatementFeature
     {
         private Mock<IOutputWriter> outputWriter;
+        private Account account;
+        private ITransactionRepository transactionRepository;
+        private IStatementPrinter statementPrinter;
 
         [SetUp]
         public void SetUp()
         {
             outputWriter = new Mock<IOutputWriter>();
+
+            account = new Account(transactionRepository, statementPrinter);
         }
 
         [Test]
         public void Print_statement_of_all_transactions()
         {
-            var account = new Account();
             account.Deposit(1000);
             account.Withdrawal(100);
             account.Deposit(500);
