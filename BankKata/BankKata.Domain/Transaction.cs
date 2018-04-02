@@ -2,13 +2,13 @@
 {
     public class Transaction
     {
-        private string v1;
-        private int v2;
+        public string DateCreated { get; private set; }
+        public int Amount { get; private set; }
 
-        public Transaction(string v1, int v2)
+        public Transaction(string date, int amount)
         {
-            this.v1 = v1;
-            this.v2 = v2;
+            DateCreated = date;
+            Amount = amount;
         }
     }
 }
