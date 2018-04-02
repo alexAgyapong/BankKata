@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BankKata.Domain")]
+[assembly: AssemblyTitle("BankKata.Client")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyProduct("BankKata.Domain")]
+[assembly: AssemblyProduct("BankKata.Client")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f889cde2-4d4a-4f9b-88b6-32f4055be62c")]
+[assembly: Guid("f80502dc-faf4-47fd-81cb-1e16e9809c90")]
 
 // Version information for an assembly consists of the following four values:
 //

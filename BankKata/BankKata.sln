@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankKata.Domain", "BankKata
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankKata.Tests", "BankKata.Tests\BankKata.Tests.csproj", "{89D1B5A1-8B7C-4C77-8262-FDBC2C090108}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankKata.Client", "BankKata.Client\BankKata.Client.csproj", "{F80502DC-FAF4-47FD-81CB-1E16E9809C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{89D1B5A1-8B7C-4C77-8262-FDBC2C090108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89D1B5A1-8B7C-4C77-8262-FDBC2C090108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89D1B5A1-8B7C-4C77-8262-FDBC2C090108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80502DC-FAF4-47FD-81CB-1E16E9809C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80502DC-FAF4-47FD-81CB-1E16E9809C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80502DC-FAF4-47FD-81CB-1E16E9809C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80502DC-FAF4-47FD-81CB-1E16E9809C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
